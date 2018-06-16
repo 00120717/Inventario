@@ -6,11 +6,10 @@
 package conexion;
 
 import com.mysql.jdbc.Connection;
-import com.sun.istack.internal.logging.Logger;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import sun.util.logging.PlatformLogger;
-import sun.util.logging.PlatformLogger.Level;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 /**
  *
