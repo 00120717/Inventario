@@ -39,12 +39,12 @@ public class Conexion {
         
         try{
             Class.forName(this.driver);
-            cnx = (Connection) DriverManager.getConnection(this.url, this.user, this.pass)
-        }catch (ClassNotFoundException | SQLExecption ex){
-            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null,ex)
+            cnx = (Connection) DriverManager.getConnection(this.url, this.user, this.pass);
+        }catch (ClassNotFoundException | SQLException ex){
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null,ex);
         }
     }
-    
+    //Credenciales de mi servidor de bases de datos
     private void cargarCredenciales(){
         user = "root";
         pass="";
